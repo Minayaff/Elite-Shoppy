@@ -1,0 +1,556 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.discount {
+    margin-top: 5%;
+    min-height: 380px;
+    background-image: url('../img/banner3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.discount .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.servis .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.servis {
+    margin: 5% 1.5%;
+
+}
+
+.foot .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* Outline Out */
+
+.hoverOutta {
+    outline: none;
+    border: none;
+    color: #ffffff;
+    background: #2fdab8;
+    font-weight: bold;
+    margin: 3.5rem auto 0 !important;
+    padding: 10px 30px;
+    display: block;
+    text-align: center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+.hoverOutta:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hoverOutta:before {
+    content: '';
+    position: absolute;
+    border: #2fdab8 solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+}
+
+.hoverOutta:hover:before,
+.hoverOutta:focus:before,
+.hoverOutta:active:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+}
+
+/* hoveroutta ends here */
+
+.weOffer {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.weOffer>span {
+    color: #080808;
+}
+
+/* section 2 starts here */
+
+.blackHole {
+    background: #111111;
+    width: 70px;
+    height: 70px;
+    transition-duration: 0.3s;
+    padding: 1.6rem;
+    z-index: 998;
+    position: relative;
+}
+
+.blackHole>.fas {
+    color: #ffffff;
+    font-size: 1.6 rem;
+    z-index: 1000;
+    transform: rotateY(180deg);
+    position: relative;
+}
+
+.blackHole::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    z-index: 1;
+    background: #2fdab8;
+    position: absolute;
+    top: 45%;
+    right: 45%;
+    bottom: 45%;
+    left: 45%;
+    z-index: 999;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.service:hover .blackHole::after {
+    opacity: 1.0;
+    transform: scale(10.0);
+    transition: 0.25s ease-in-out;
+}
+
+.whiteSoul {
+    margin-left: 25%;
+}
+
+.whiteSoul>p {
+    color: #545454;
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+
+.whiteSoul>h5 {
+    font-size: 0.9em;
+    color: #2fdab8;
+    margin: 0em 0 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+
+/* FOOTER STARTS HERE  */
+
+.foot {
+    padding: 5% 0%;
+    background: #000000;
+    color: #ffffff;
+
+}
+
+
+.socialLinks>h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    line-height: 2rem;
+}
+
+.socialLinks>h3>span {
+    background: #2fdab8;
+    padding: 7px 15px;
+    line-height: 2rem;
+}
+
+.socialLinks>p {
+    color: #737070;
+    font-size: .9rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+/*-- //header --*/
+
+.social-nav {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 1em 0 0;
+    float: right;
+}
+
+.social-nav li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.social-nav a {
+    display: inline-block;
+    float: none;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background: #000;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.model-3d a {
+    background: #5C5B5B;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.model-3d .front,
+.model-3d .back {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateZ(18px);
+    -moz-transform: translateZ(18px);
+    -ms-transform: translateZ(18px);
+    -o-transform: translateZ(18px);
+    transform: translateZ(18px);
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    backface-visibility: visible;
+    color: #212121;
+    font-size: 12px;
+}
+
+.model-3d .back {
+    -webkit-transform: rotateX(90deg) translateZ(18px);
+    -moz-transform: rotateX(90deg) translateZ(18px);
+    -ms-transform: rotateX(90deg) translateZ(18px);
+    -o-transform: rotateX(90deg) translateZ(18px);
+    transform: rotateX(90deg) translateZ(18px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+a.twitter .front {
+    background: #00acee;
+}
+
+a.facebook .front {
+    background: #3b5998;
+}
+
+a.instagram .front {
+    background: #f77737;
+}
+
+a.linkedin .front {
+    background: #bd081c;
+}
+
+.twitter .back,
+.facebook .back,
+.instagram .back,
+.linkedin .back {
+    background: #fff;
+}
+
+.model-3d a:hover {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.model-3d a:hover .back {
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.social-nav .front i {
+    color: #fff;
+    font-size: 12px;
+}
+
+.social-nav .back i {
+    color: #000;
+    font-size: 12px;
+}
+
+/*--social icons--*/
+
+/* our information */
+
+.ourInfo>h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.ourInfo span {
+    font-weight: 700;
+}
+
+.ourInfo>ul>li {
+    font-size: 1rem;
+    list-style-type: none;
+    color: #737070;
+    letter-spacing: 1px;
+}
+
+.ourInfo>ul>li>a {
+    text-decoration: none;
+    color: #737070;
+    font-size: 14px;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+.ourInfo>ul>li>a:hover {
+    color: #2fdab8;
+}
+
+/* our information ends here */
+
+/* store information starts here */
+
+.storeInfo h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+.storeInfo span {
+    font-weight: 700;
+}
+
+.contacts.fa-phone,
+.contacts.fa-envelope,
+.contacts.fa-location-arrow {
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.contacts h6 {
+    color: #FFFFFF;
+    font-size: 0.9em;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contacts p {
+    margin: 0.8em 0 0 0;
+    font-size: .9em;
+    color: #565656;
+    margin-bottom: 15px;
+}
+
+.contacts p a {
+    color: #2fdab8;
+    text-decoration: none;
+}
+
+.contacts p a:hover {
+    color: #b5b5b5;
+}
+
+/* contact info ends here */
+
+/* flickr Posts start here */
+.flickrPosts h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.flickrPosts span {
+    font-weight: 700;
+}
+
+.imgKeeper {
+    padding: 0;
+    width: 100%;
+}
+
+.imgKeeper>li {
+    list-style-type: none;
+    margin: 1%;
+    width: 27%;
+    max-height: 90px;
+    float: left;
+}
+
+.imgKeeper>li>a>img {
+    display: inline-block;
+    width: 100%;
+}
+
+/* flickr Posts ends here */
+
+/* subscriptions starts here  */
+
+.line-top {
+    border-top: 1px solid #101010;
+    padding: 1em 0;
+    margin-top: 3rem;
+}
+
+.line-bottom {
+    border-bottom: 1px solid #101010;
+    padding: 2rem 0;
+    margin-top: 2em;
+}
+
+.subsTxt {
+    height: 40px;
+}
+
+.subsTxt>h3 {
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.emailInp {
+    outline: none;
+    padding: 10px 14px;
+    color: #848484;
+    font-size: .9rem;
+    border: 1px solid #3a3939;
+    width: 75%;
+    height: 40px;
+    letter-spacing: 3px;
+    background: #1f1f1f;
+    float: left;
+}
+
+.btnInp {
+    border: none;
+    width: 25%;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 15px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #2fdab8;
+    color: #fff;
+    float: left;
+}
+
+.btnInp:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* copyRight starts here */
+
+.copy-right {
+    color: #848484;
+    text-align: center;
+    margin-top: 62px;
+    font-size: 14px;
+}
+
+.copy-right>a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.copy-right a:hover {
+    color: #2fdab8;
+}
+
+/* copyRight ended */
+
+@media only screen and (max-width: 992px) {
+
+    .ourInfo,
+    .storeInfo {
+        margin-top: 5%
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .subsInput {
+        margin-top: 10%
+    }
+
+    .line-bottom {
+        margin-top: 5em;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .imgKeeper>li {
+        margin: 5% 1%;
+        width: 18%;
+        max-height: 80px;
+
+    }
+}
+
+@media only screen and (max-width: 475px) {
+
+    .weOffer {
+        font-size: 30px;
+    }
+
+    .discount button {
+        padding: 8px 20px;
+        margin-top: 1em;
+    }
+
+    .discount .hoverOutta {
+        margin: 1.5rem auto 0 !important;
+    }
+}

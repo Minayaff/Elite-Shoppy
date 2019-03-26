@@ -1,0 +1,64 @@
+.multiRange {
+    position: relative;
+    display: flex;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.range {
+    width: 90%;
+    height: 5px;
+    background-color: #ddd;
+}
+
+.range__button_1, .range__button_2 {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: move;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background-color: #fc636b;
+}
+
+.range__between {
+    position: absolute;
+    height: 4px;
+    width: 0px;
+    margin-top: 0px;
+    border: none;
+    background-color: #000000;
+}
+
+.range_inpt1, .range_inpt2 {
+    margin-top: 20px;
+    width: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputHolder {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    background: none;
+    word-spacing: 1em;
+    color: #000 !important;
+    border: 1px solid #D2D2D2 !important;
+    padding: 4px 0;
+}
+
+.inputHolder>input {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+}

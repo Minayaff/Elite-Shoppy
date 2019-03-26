@@ -1,0 +1,236 @@
+.row {
+    margin: 0 !important;
+}
+
+.categories {
+    list-style-type: none;
+    border: 1px solid #999999;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.categories>h3 {
+    color: #2fdab8;
+    text-align: center;
+    background: #f7f7f7;
+    padding: 17px 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-bottom: 1px solid #d2d2d2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.mainList>li>p {
+    cursor: pointer !important;
+    margin: 0 !important;
+}
+
+.mainList li {
+    margin: 0.8rem 0;
+}
+
+.categories i {
+    color: #2fdab8 !important;
+}
+
+.altCategories {
+    display: none;
+}
+
+.altCategories li {
+    cursor: pointer;
+}
+
+.show .altCategories {
+    display: block !important;
+}
+
+.bumbleBee a {
+    color: #999999;
+}
+
+.bumbleBee {
+    display: none;
+    margin-left: 0.9rem;
+}
+
+.view .bumbleBee {
+    display: block !important;
+}
+
+/* ////////////////////// */
+
+.community {
+    list-style-type: none;
+    border: 1px solid #999999;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.community>h3 {
+    color: #2fdab8;
+    text-align: center;
+    background: #f7f7f7;
+    padding: 17px 0;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-bottom: 1px solid #d2d2d2;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.radioInputList>label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radioInputList>label>input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radioInputList .radioButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #2fdab8;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+/* .radioInputList>label:hover input~.radioButton {
+    background-color: #ccc;
+}
+
+.radioInputList>label input:checked~.radioButton {
+    background-color: #2fdab8;
+} */
+
+.radioButton:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radioButton:before {
+    content: "";
+    position: absolute;
+}
+
+.radioInputList>label input:checked~.radioButton:after {
+    display: block;
+}
+
+.radioInputList>label .radioButton:before {
+    top: 3.75px;
+    left: 3.8px;
+    right: 16.25px;
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 50%;
+    background: white;
+    z-index: 4;
+}
+
+.radioInputList>label .radioButton:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    z-index: 5;
+}
+
+.sendButton {
+    letter-spacing: 1px;
+}
+
+.sendButton:hover {
+    background: #2fdab8;
+}
+
+/* multiRange start */
+
+.multiRange {
+    position: relative;
+    display: flex;
+    margin-bottom: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.range {
+    width: 90%;
+    height: 5px;
+    background-color: #ddd;
+}
+
+.range__button_1,
+.range__button_2 {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: move;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background-color: #fc636b;
+}
+
+.range__between {
+    position: absolute;
+    height: 4px;
+    width: 0px;
+    margin-top: 0px;
+    border: none;
+    background-color: #000000;
+}
+
+.range_inpt1,
+.range_inpt2 {
+    margin-top: 20px;
+    width: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputHolder {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    background: none;
+    word-spacing: 1em;
+    color: #000 !important;
+    border: 1px solid #D2D2D2 !important;
+    padding: 4px 0;
+}
+
+.inputHolder>input {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+}
